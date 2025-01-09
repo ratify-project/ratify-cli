@@ -47,7 +47,7 @@ body:
       required: true
     attributes:
       label: Describe your environment 
-      description: "OS and Golang version"
+      description: "OS platform and architecture"
   - type: textarea
     id: version
     validations:
