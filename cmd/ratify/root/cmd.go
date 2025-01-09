@@ -17,8 +17,8 @@ import "github.com/spf13/cobra"
 
 func New() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:          "oras [command]",
-		SilenceUsage: true,
+		Use:   "ratify",
+		Short: "Ratify is a reference artifact tool for managing and verifying reference artifacts",
 	}
 	cmd.AddCommand(
 		versionCommand(),

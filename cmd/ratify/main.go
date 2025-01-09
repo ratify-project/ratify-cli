@@ -19,13 +19,7 @@ import (
 	"os/signal"
 
 	"github.com/ratify-project/ratify-cli/v2/cmd/ratify/root"
-	"github.com/spf13/cobra"
 )
-
-var cmd = &cobra.Command{
-	Use:   "ratify",
-	Short: "Ratify is a reference artifact tool for managing and verifying reference artifacts",
-}
 
 func main() {
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
