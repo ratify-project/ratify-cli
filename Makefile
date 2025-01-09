@@ -62,11 +62,11 @@ clean:
 
 .PHONY: check-line-endings
 check-line-endings: ## check line endings
-	! find cmd pkg internal -name "*.go" -type f -exec file "{}" ";" | grep CRLF
+	! find cmd internal -name "*.go" -type f -exec file "{}" ";" | grep CRLF
 
 .PHONY: fix-line-endings
 fix-line-endings: ## fix line endings
-	find . -type f -name "*.go" -exec sed -i -e "s/\r//g" {} +
+	find cmd internal -type f -name "*.go" -exec sed -i -e "s/\r//g" {} +
 
 .PHONY: vendor
 vendor: ## vendores the go modules

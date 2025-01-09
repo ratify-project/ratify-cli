@@ -11,33 +11,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package root
 
-import (
-	"fmt"
-	"runtime"
+import "github.com/spf13/cobra"
 
-	"github.com/ratify-project/ratify-cli/v2/internal/version"
-	"github.com/spf13/cobra"
-)
-
-func versionCommand() *cobra.Command {
+func New() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "version",
-		Short: "Show the ratify version information",
-		Args:  cobra.NoArgs,
-		Run: func(cmd *cobra.Command, args []string) {
-			runVersion()
-		},
+		Use:          "oras [command]",
+		SilenceUsage: true,
 	}
+	cmd.AddCommand(
+		versionCommand(),
+	)
 	return cmd
-}
-
-func runVersion() {
-	fmt.Printf("Version:     %s\n", version.GetVersion())
-	fmt.Printf("Go version:  %s\n", runtime.Version())
-
-	if version.GitCommit != "" {
-		fmt.Printf("Git commit:  %s\n", version.GitCommit)
-	}
 }

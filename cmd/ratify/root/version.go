@@ -11,26 +11,33 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package root
 
 import (
-	"context"
-	"os"
-	"os/signal"
+	"fmt"
+	"runtime"
 
-	"github.com/ratify-project/ratify-cli/v2/cmd/ratify/root"
+	"github.com/ratify-project/ratify-cli/v2/internal/version"
 	"github.com/spf13/cobra"
 )
 
-var cmd = &cobra.Command{
-	Use:   "ratify",
-	Short: "Ratify is a reference artifact tool for managing and verifying reference artifacts",
+func versionCommand() *cobra.Command {
+	cmd := &cobra.Command{
+		Use:   "version",
+		Short: "Show the ratify version information",
+		Args:  cobra.NoArgs,
+		Run: func(cmd *cobra.Command, args []string) {
+			runVersion()
+		},
+	}
+	return cmd
 }
 
-func main() {
-	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
-	defer cancel()
-	if err := root.New().ExecuteContext(ctx); err != nil {
-		os.Exit(1)
+func runVersion() {
+	fmt.Printf("Version:     %s\n", version.GetVersion())
+	fmt.Printf("Go version:  %s\n", runtime.Version())
+
+	if version.GitCommit != "" {
+		fmt.Printf("Git commit:  %s\n", version.GitCommit)
 	}
 }
