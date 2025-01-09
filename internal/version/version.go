@@ -16,7 +16,7 @@ limitations under the License.
 package version
 
 var (
-	// Version shows the current notation version, optionally with pre-release.
+	// Version shows the current ratify version, optionally with pre-release.
 	Version = "v2.0.0-alpha.1"
 
 	// BuildMetadata stores the build metadata.
