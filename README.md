@@ -1,11 +1,11 @@
 # ratify-cli
 
 > [!WARNING]
-> This project is currently under initial development. APIs may change incompatibly.
+> This project is currently under initial development. Commands may change incompatibly.
 
-[![Build Status](https://github.com/ratify-project/ratify-cli/actions/workflows/build.yml/badge.svg?event=push&branch=main)](https://github.com/ratify-project/ratify-cli/actions/workflows/build.yml?query=event%3Apush+branch%3Amain)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ratify-project/ratify-cli)](https://goreportcard.com/report/github.com/ratify-project/ratify-cli)
 [![Codecov](https://codecov.io/gh/ratify-project/ratify-cli/branch/main/graph/badge.svg)](https://codecov.io/gh/ratify-project/ratify-cli)
-[![Go Reference](https://pkg.go.dev/badge/github.com/ratify-project/ratify-cli.svg)](https://pkg.go.dev/github.com/ratify-project/ratify-cli@main)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ratify-projectotation/ratify-cli/badge)](https://api.securityscorecards.dev/projects/github.com/ratify-project/ratify-cli)
 
 `ratify-cli` is the v2 version of Ratify's command-line tool for managing and verifying reference artifacts
 
