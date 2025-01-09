@@ -47,7 +47,7 @@ body:
       required: true
     attributes:
       label: Describe your environment 
-      description: "OS platform wtih version and architecture"
+      description: "OS platform with version and architecture"
   - type: textarea
     id: version
     validations:
