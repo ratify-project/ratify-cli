@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Template created based on verbiage from https://github.com/notaryproject/notation-go/blob/v1.2.1/.github/ISSUE_TEMPLATE/config.yml
+# Template created based on verbiage from https://github.com/notaryproject/notation-go/blob/v1.2.0/.github/ISSUE_TEMPLATE/config.yml
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
