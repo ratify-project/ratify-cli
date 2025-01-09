@@ -12,9 +12,9 @@
 # limitations under the License.
 
 builds:
-  - main: ./cmd/notation
-    id: notation
-    binary: notation
+  - main: ./cmd/ratify
+    id: ratify
+    binary: ratify
     env:
       - CGO_ENABLED=0
     goos:

@@ -11,6 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# workflow created based on verbiage from https://github.com/notaryproject/notation/blob/v1.2.0/.github/workflows/release-github.yml
 name: release-github
 
 on:
