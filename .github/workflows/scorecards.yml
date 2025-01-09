@@ -27,7 +27,6 @@ on:
       - release-*
   workflow_dispatch:
 
-
 permissions:
   contents: read
   
