@@ -10,9 +10,8 @@
 This CLI follows [Semantic Versioning](https://semver.org/). Breaking changes are reserved for major releases, while minor and patch releases remain fully backward compatible.
 
 ## v2: under development
-[![Go Report Card](https://goreportcard.com/badge/github.com/ratify-project/ratify-cli)](https://goreportcard.com/report/github.com/ratify-project/ratify-cli)
+[![Build Status](https://github.com/ratify-project/ratify-cli/actions/workflows/build.yml/badge.svg?event=push&branch=main)](https://github.com/ratify-project/ratify-cli/actions/workflows/build.yml?query=event%3Apush+branch%3Amain)
 [![Codecov](https://codecov.io/gh/ratify-project/ratify-cli/branch/main/graph/badge.svg)](https://codecov.io/gh/ratify-project/ratify-cli)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/ratify-projectotation/ratify-cli/badge)](https://api.securityscorecards.dev/projects/github.com/ratify-project/ratify-cli)
 
 The version 2 of Ratify is under development.
 
