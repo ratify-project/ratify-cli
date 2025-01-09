@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# template created based on verbiage from https://github.com/notaryproject/notation-go/blob/v1.2.1/.github/ISSUE_TEMPLATE/bug-or-issue.yaml
+# template created based on verbiage from https://github.com/notaryproject/notation/blob/v1.2.0/.github/ISSUE_TEMPLATE/bug-or-issue.yaml
 name: 🐛 Bug or Issue
 description: Something is not working as expected or not working at all! Report it here!
 labels: [bug, triage]
@@ -47,7 +47,7 @@ body:
       required: true
     attributes:
       label: Describe your environment 
-      description: "OS platform and architecture"
+      description: "OS platform wtih version and architecture"
   - type: textarea
     id: version
     validations:

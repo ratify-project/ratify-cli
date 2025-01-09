@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Template created based on verbiage from https://github.com/notaryproject/notation-go/blob/v1.2.1/.github/ISSUE_TEMPLATE/feature-request.yaml
+# Template created based on verbiage from https://github.com/notaryproject/notation/blob/v1.2.0/.github/ISSUE_TEMPLATE/feature-request.yaml
 name: 🚀 Feature Request
 description: Suggest an idea for this project.
 labels: [enhancement, triage]
