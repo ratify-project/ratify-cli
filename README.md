@@ -23,9 +23,9 @@ As v1 has been stable for a while, it is available in the [Ratify repository](ht
 
 - Please check the [Ratify Concepts](https://ratify.dev/docs/category/concepts) for more details about Ratify and its associated libraries.
 
-## Older Versions
-
-If you need the v1 version, please see the [original Ratify repository](https://github.com/ratify-project/ratify).
+## Contributing
+Thanks for your interest in contributing! There are many ways to contribute to this project. 
+Get started here: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Code of Conduct
 
