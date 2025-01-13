@@ -14,30 +14,12 @@
 package root
 
 import (
-	"fmt"
-	"runtime"
-
-	"github.com/ratify-project/ratify-cli/v2/internal/version"
-	"github.com/spf13/cobra"
+	"testing"
 )
 
-func versionCommand() *cobra.Command {
-	cmd := &cobra.Command{
-		Use:   "version",
-		Short: "Show the ratify version information",
-		Args:  cobra.NoArgs,
-		Run: func(cmd *cobra.Command, args []string) {
-			runVersion()
-		},
-	}
-	return cmd
-}
-
-func runVersion() {
-	fmt.Printf("Version:     %s\n", version.GetVersion())
-	fmt.Printf("Go version:  %s\n", runtime.Version())
-
-	if version.GitCommit != "" {
-		fmt.Printf("Git commit:  %s\n", version.GitCommit)
+func TestNewRootCommand(t *testing.T) {
+	rootCmd := New()
+	if rootCmd.Use != "ratify" {
+		t.Errorf("expected root command Use to be 'ratify', got '%s'", rootCmd.Use)
 	}
 }
