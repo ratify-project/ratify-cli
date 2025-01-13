@@ -40,12 +40,12 @@ func TestVersionCommand(t *testing.T) {
 	out, _ := io.ReadAll(r)
 	output := string(out)
 	if !strings.Contains(output, "Version:") {
-		t.Errorf("Expected output to contain 'Version:', got: %s", string(out))
+		t.Errorf("Expected output to contain 'Version:', got: %s", output)
 	}
 	if !strings.Contains(output, "Go version:") {
-		t.Errorf("Expected output to contain 'Go version:', got: %s", string(out))
+		t.Errorf("Expected output to contain 'Go version:', got: %s", output)
 	}
 	if !strings.Contains(output, "Git commit:") {
-		t.Errorf("Expected output to contain 'Git commit:', got: %s", string(out))
+		t.Errorf("Expected output to contain 'Git commit:', got: %s", output)
 	}
 }
