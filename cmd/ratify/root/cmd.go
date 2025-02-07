@@ -22,6 +22,7 @@ func New() *cobra.Command {
 	}
 	cmd.AddCommand(
 		versionCommand(),
+		verifyCommand(nil),
 	)
 	return cmd
 }
